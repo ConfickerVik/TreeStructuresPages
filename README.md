@@ -22,8 +22,8 @@
 Чтобы начать пользоваться виртуальным окружением, необходимо его активировать:
 
 ```bash
-  venv\Scripts\activate.bat  - для Windows;
-  source venv/bin/activate - для Linux и MacOS.
+  venv\Scripts\activate.bat  - для Windows
+  source venv/bin/activate - для Linux и MacOS
 ```
 
 Установите зависимости из файла requirements.txt:
@@ -47,32 +47,29 @@
 
 Форма добавления выглядит следующим образом:
 
-![My Image](.screenshots/addpages.png)
+![addpages](https://github.com/ConfickerVik/TreeStructuresPages/assets/43670422/b74cdef8-cf7a-4e75-bee5-df20456005f4)
 
 Поле url было скрыто из форм создания и изменения страницы, так как оно генерируется при помощи пагинации родительского url и созданного объекта
 
 Заполним необходимые поля и сохраним запись:
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![addpagesAbout](https://github.com/ConfickerVik/TreeStructuresPages/assets/43670422/6630002c-f056-4fc8-b67a-f127788aaf05)
 
 В результате получаем:
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![createAbout](https://github.com/ConfickerVik/TreeStructuresPages/assets/43670422/000b2429-3958-4c46-a984-f8b482cc5e54)
 
-Теперь добавим страницы Контакты и Реквизиты
+Добавим страницы Контакты и Реквизиты по такому же принципу и получим следующее: 
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![addContacts](https://github.com/ConfickerVik/TreeStructuresPages/assets/43670422/b5db6b11-e5c9-415e-8b0c-7e96aca34557)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+В итоге получаем записи в бд и можем убедиться, что url были сгенерированы.
 
-В итоге получаем записи в бд и можем убедиться, что url были сгенерированы 
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 ## Документация API
 
 #### Получение потомков для всех страниц
 
-```http
+```bash
   GET /api/pages/?url=
 ```
 
@@ -84,7 +81,7 @@
 
 #### Получение потомков для страницы, например, /catalog/shoes/
 
-```http
+```bash
   GET /api/pages/?url=/catalog/shoes/
 ```
 
